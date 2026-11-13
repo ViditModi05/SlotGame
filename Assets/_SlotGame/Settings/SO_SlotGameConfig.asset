@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65e75dff0bdfb324a80d5fcd7bec8b0a, type: 3}
+  m_Name: SO_SlotGameConfig
+  m_EditorClassIdentifier: Assembly-CSharp::SlotGame.Configuration.SlotGameConfig
+  startingCredits: 1000
+  betPresets: 0a0000001900000032000000
+  symbols:
+  - id: 0
+    displayName: Seven
+    sprite: {fileID: 21300000, guid: 56cde30b60695a148a46458ac9155e4f, type: 3}
+    weight: 1
+    payoutMultiplier: 30
+  - id: 1
+    displayName: Cherries
+    sprite: {fileID: 21300000, guid: 82bb8fb449f44a6468c1be2888c3f048, type: 3}
+    weight: 1
+    payoutMultiplier: 5
+  - id: 2
+    displayName: Bell
+    sprite: {fileID: 21300000, guid: 4440a72fb39b5234196a2155dce0a0f0, type: 3}
+    weight: 1
+    payoutMultiplier: 10
+  - id: 3
+    displayName: Bar
+    sprite: {fileID: 21300000, guid: 74ebea7a86d08e645bfcf54a0320b589, type: 3}
+    weight: 1
+    payoutMultiplier: 15
