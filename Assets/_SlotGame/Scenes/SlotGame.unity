@@ -340,6 +340,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7311545072863469387, guid: 33b508b72a6c67e47adb7ac658a32500, type: 3}
   m_PrefabInstance: {fileID: 8840698011852966341}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &229010198 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4624662875258042280, guid: 33b508b72a6c67e47adb7ac658a32500, type: 3}
+  m_PrefabInstance: {fileID: 8840698011852966341}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ed1086802a63f84c8312249ce2c8ee2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: SlotGame.Runtime::SlotGame.Presentation.ReelView
 --- !u!1 &277345376
 GameObject:
   m_ObjectHideFlags: 0
@@ -2043,6 +2054,69 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7311545072863469387, guid: 33b508b72a6c67e47adb7ac658a32500, type: 3}
   m_PrefabInstance: {fileID: 963997414}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &963997416 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4624662875258042280, guid: 33b508b72a6c67e47adb7ac658a32500, type: 3}
+  m_PrefabInstance: {fileID: 963997414}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ed1086802a63f84c8312249ce2c8ee2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: SlotGame.Runtime::SlotGame.Presentation.ReelView
+--- !u!1 &990116983
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 990116985}
+  - component: {fileID: 990116984}
+  m_Layer: 0
+  m_Name: '[SLOT_GAME_CONTROLLER]'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &990116984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 990116983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f644a61f334bd434db0aaefc977943a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: SlotGame.Runtime::SlotGame.Presentation.SlotGameController
+  config: {fileID: 11400000, guid: d6e729ac3b9bc1845bb7ab992968dad0, type: 2}
+  view: {fileID: 1673044416}
+  leftReel: {fileID: 229010198}
+  middleReel: {fileID: 963997416}
+  rightReel: {fileID: 1363972296}
+  lever: {fileID: 1162021437}
+  spinDuration: 2
+  stopStagger: 0.3
+--- !u!4 &990116985
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 990116983}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1014567241
 GameObject:
   m_ObjectHideFlags: 0
@@ -2582,6 +2656,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7311545072863469387, guid: 33b508b72a6c67e47adb7ac658a32500, type: 3}
   m_PrefabInstance: {fileID: 1363972294}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1363972296 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4624662875258042280, guid: 33b508b72a6c67e47adb7ac658a32500, type: 3}
+  m_PrefabInstance: {fileID: 1363972294}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ed1086802a63f84c8312249ce2c8ee2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: SlotGame.Runtime::SlotGame.Presentation.ReelView
 --- !u!1 &1451611028
 GameObject:
   m_ObjectHideFlags: 0
@@ -2915,6 +3000,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1673044415}
+  - component: {fileID: 1673044416}
   m_Layer: 5
   m_Name: GameLayout
   m_TagString: Untagged
@@ -2948,6 +3034,30 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1673044416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1673044414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 778da106899b52b44a85596ad5b119a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: SlotGame.Runtime::SlotGame.Presentation.SlotGameView
+  creditsText: {fileID: 351439099}
+  betText: {fileID: 1908317962}
+  resultText: {fileID: 165333736}
+  payoutText: {fileID: 1262202804}
+  spinButton: {fileID: 1215947776}
+  decreaseBetButton: {fileID: 277345378}
+  increaseBetButton: {fileID: 845818136}
+  newSessionButton: {fileID: 850078550}
+  confirmationPopup: {fileID: 617795653}
+  confirmButton: {fileID: 913209815}
+  cancelButton: {fileID: 416106554}
+  eventSystem: {fileID: 91423943}
 --- !u!1 &1802016435
 GameObject:
   m_ObjectHideFlags: 0
@@ -3436,6 +3546,7 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 990116985}
   - {fileID: 519420032}
   - {fileID: 619394802}
   - {fileID: 878278889}

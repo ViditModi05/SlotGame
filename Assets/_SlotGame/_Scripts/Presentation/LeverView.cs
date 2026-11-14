@@ -82,7 +82,10 @@ namespace SlotGame.Presentation
             pullRoutine = null;
         }
 
-        private void OnDisable()
+        /// <summary>
+        /// Cancels any pull and restores the raised pose.
+        /// </summary>
+        public void ResetPose()
         {
             if (pullRoutine != null)
             {
@@ -95,6 +98,11 @@ namespace SlotGame.Presentation
             {
                 leverImage.sprite = raisedSprite;
             }
+        }
+
+        private void OnDisable()
+        {
+            ResetPose();
         }
 
 #if UNITY_EDITOR
